@@ -1,8 +1,13 @@
-.container{
-    position: relative;
-    @include tablet{
-       display: flex; 
-       padding-left: 50px;
-        padding-right: 50px;
-    }
+.container {
+
+    background-image: url("/img/vanesa.jpg");
+    background-repeat: no-repeat;
+    // background-position: center;
+    width: 320px;
+    height: 640px;
+    background-color: aqua;
+}
+
+.container__item {
+    color: red;
 }
