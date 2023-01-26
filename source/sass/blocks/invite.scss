@@ -1,0 +1,26 @@
+.invite__title {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    color: #0F805D;
+}
+
+.invite__text {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    text-align: center;
+    @include font-invite;
+    margin-bottom: 34px
+
+}
+
+.invite__phone{
+    @include font-invite;
+    margin-bottom: 12px;
+}
+
+.invite__mail{
+    @include font-invite; 
+    margin-bottom: 12px;
+}

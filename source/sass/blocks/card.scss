@@ -1,6 +1,12 @@
-.card{
-    filter: drop-shadow(0px 4px 4px rgba(88, 13, 101, 0.15));
+.card {
     margin-bottom: 24px;
+    background: #FBFCFE;
+    border-radius: 40px;
+    box-shadow: 0px 4px 4px rgba(88, 13, 101, 0.15);
+}
+
+.card:last-child {
+    margin-bottom: 64px;
 }
 
 .card__title {
@@ -14,19 +20,23 @@
     margin-bottom: 28px;
 }
 
-.card__wrapper{
+.card__wrapper {
     text-align: center;
     margin-bottom: 38px;
 }
 
-.card__price{
+.card__price {
     font-size: 18px;
     line-height: 21px;
     align-items: center;
 }
 
-.card__weight{
+.card__weight {
     font-size: 18px;
     line-height: 21px;
     align-items: center;
+}
+
+.card__button{
+    margin-bottom: 54px;
 }

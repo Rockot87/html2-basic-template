@@ -1,0 +1,9 @@
+.whats-new {
+    padding-left: 26px;
+    padding-right: 26px;
+}
+
+.whats-new__title {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    @include title;
+}

@@ -11,18 +11,32 @@
   }
 }
 
-@mixin font {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  line-height: 20px;
-  color: #444444;
-  margin: 0;
+// @mixin font {
+//   font-family: "Open Sans", Arial, Helvetica, sans-serif;
+//   font-size: 15px;
+//   line-height: 20px;
+//   color: #444444;
+//   margin: 0;
+// }
+
+// @mixin color-title {
+//   font-family: "Open Sans", Arial, Helvetica, sans-serif;
+//   font-size: 17px;
+//   line-height: 16px;
+//   color: #63D1BB;
+//   text-transform: uppercase;
+// }
+
+@mixin font-invite {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
 }
 
-@mixin color-title {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  font-size: 17px;
-  line-height: 16px;
-  color: #63D1BB;
-  text-transform: uppercase;
+@mixin title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  color: #0F805D;
 }
