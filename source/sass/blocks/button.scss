@@ -1,19 +1,22 @@
 .button {
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
-    width: 260px;
+    width: 220px;
     display: inline-block;
-    padding: 16px 70px;
+    padding: 14px 68px;
     font-size: 18px;
     line-height: 20px;
-    text-transform: uppercase;
-    color: #444444;
-    background-color: #FFFFFF;
-    border: 2px solid #444444;
+    color: #FBFCFE;
+    background-color: #6A107A;
+    border-radius: 40px;
+    border: 1px solid #6A107A;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
-.button--form {
-    font-size: 17px;
-    line-height: 16px;
-    padding: 18px 35px;
-    margin-bottom: 55px;
-}
+// .button--form {
+//     font-size: 17px;
+//     line-height: 16px;
+//     padding: 18px 35px;
+//     margin-bottom: 55px;
+// }

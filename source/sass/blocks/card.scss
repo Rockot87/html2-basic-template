@@ -1,0 +1,32 @@
+.card{
+    filter: drop-shadow(0px 4px 4px rgba(88, 13, 101, 0.15));
+    margin-bottom: 24px;
+}
+
+.card__title {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    color: #0F805D;
+    margin: 0;
+    margin-bottom: 28px;
+}
+
+.card__wrapper{
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.card__price{
+    font-size: 18px;
+    line-height: 21px;
+    align-items: center;
+}
+
+.card__weight{
+    font-size: 18px;
+    line-height: 21px;
+    align-items: center;
+}

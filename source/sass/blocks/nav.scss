@@ -1,0 +1,17 @@
+.nav__list{
+    padding: 0;
+    margin: 0;
+}
+
+.nav__item {
+    list-style: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 32px;
+    padding-left: 40px;
+}
+
+.nav__item:last-child{
+    margin-bottom: 152px;
+}
