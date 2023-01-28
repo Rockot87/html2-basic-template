@@ -1,5 +1,11 @@
 .order__title {
     @include title;
+
+    @include tablet {
+        font-size: 52px;
+        line-height: 58px;
+        margin-bottom: 48px;
+    }
 }
 
 .order__text {
@@ -7,5 +13,12 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    text-align: center
+    text-align: center;
+
+    @include tablet {
+        font-size: 18px;
+        line-height: 22px;
+        padding-left: 118px;
+        padding-right: 118px;
+    }
 }
