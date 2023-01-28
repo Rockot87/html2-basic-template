@@ -9,14 +9,17 @@
     <title>Ягоды</title>
 </head>
 
-<body class="page__body">
+<body class="page page__body">
 
-    <header class="header">
-        <nav class="header__nav nav">
-            <a class="nav__logo" href="">
-                <img class="header-nav__pic" src="" alt="">
+    <header class="page__header header">
+        <nav class="header__nav nav nav--closed nav--nojs">
+            <a class="nav__logo" href="#">
+                <img class="nav__pic" src="../img/logo.svg" alt="Логотип">
+                <p class="nav__title title-berry">Ягода</p>
             </a>
-            <ul class="nav__list">
+
+            <button class="nav__toggle  toggle nav__toggle--active" type="button" aria-label="открыть меню"></button>
+            <ul class="nav__list nav__item--active">
                 <li class="nav__item"><a class="nav__link" href="#">Каталог</a></li>
                 <li class="nav__item"><a class="nav__link" href="#news">Новости</a></li>
                 <li class="nav__item"><a class="nav__link" href="#contacts">Контакты</a></li>
@@ -40,90 +43,156 @@
         </div>
         <section class="catalog">
             <h2 class="catalog__title">Каталог</h2>
-            <div class="catalog__card card">
-                <img class="card__foto" src="#" alt="Изображение замороженной малины">
-                <h3 class="card__title">Малина</h3>
-                <div class="card__wrapper">
-                    <span class="card__price">350 ₽</span>
-                    <span class="card__weight">за 1 кг</span>
+            <div class="catalog__container">
+                <div class="catalog__card card">
+                    <picture>
+                        <source type="image/webp"
+                            srcset="/img/catalog/malina/malina@1x.webp 1x, /img/catalog/malina/malina@2x.webp 2x">
+                        <img class="card__foto" src="/img/catalog/malina/malina@1x.jpg" width="264" height="180"
+                            alt="Изображение замороженной малины.">
+                    </picture>
+                    <h3 class="card__title">Малина</h3>
+                    <div class="card__wrapper">
+                        <span class="card__price">350 ₽</span>
+                        <span class="card__weight">за 1 кг</span>
+                    </div>
+                    <button class="card__button button" type="button">Заказать</button>
                 </div>
-                <button class="card__button button" type="button">Заказать</button>
-            </div>
 
-            <div class="catalog__card card">
-                <img class="card__foto" src="#" alt="Изображение замороженной ежевики">
-                <h3 class="card__title">Ежевика</h3>
-                <div class="card__wrapper">
-                    <span class="card__price">550 ₽</span>
-                    <span class="card__weight">за 1 кг</span>
+                <div class="catalog__card card">
+                    <picture>
+                        <source type="image/webp"
+                            srcset="/img/catalog/ezevica/ezevica@1x.webp 1x, /img/catalog/ezevica/ezevica@2x.webp 2x">
+                        <img class="card__foto" src="/img/catalog/ezevica/ezevica@1x.jpg" width="264" height="180"
+                            alt="Изображение замороженной ежевики.">
+                    </picture>
+                    <h3 class="card__title">Ежевика</h3>
+                    <div class="card__wrapper">
+                        <span class="card__price">550 ₽</span>
+                        <span class="card__weight">за 1 кг</span>
+                    </div>
+                    <button class="card__button button" type="button">Заказать</button>
                 </div>
-                <button class="card__button button" type="button">Заказать</button>
-            </div>
 
-            <div class="catalog__card card">
-                <img class="card__foto" src="#" alt="Изображение замороженной брусники">
-                <h3 class="card__title">Брусника</h3>
-                <div class="card__wrapper">
-                    <span class="card__price">390 ₽</span>
-                    <span class="card__weight">за 1 кг</span>
+                <div class="catalog__card card">
+                    <picture>
+                        <source type="image/webp"
+                            srcset="/img/catalog/brusnika/brusnika@1x.webp 1x, /img/catalog/brusnika/brusnika@2x.webp 2x">
+                        <img class="card__foto" src="/img/catalog/brusnika/brusnika@1x.jpg" width="264" height="180"
+                            alt="Изображение замороженной брусники.">
+                    </picture>
+                    <h3 class="card__title">Брусника</h3>
+                    <div class="card__wrapper">
+                        <span class="card__price">390 ₽</span>
+                        <span class="card__weight">за 1 кг</span>
+                    </div>
+                    <button class="card__button button" type="button">Заказать</button>
                 </div>
-                <button class="card__button button" type="button">Заказать</button>
-            </div>
 
-            <div class="catalog__card card">
-                <img class="card__foto" src="#" alt="Изображение клубники">
-                <h3 class="card__title">Клубника</h3>
-                <div class="card__wrapper">
-                    <span class="card__price">450 ₽</span>
-                    <span class="card__weight">за 1 кг</span>
+                <div class="catalog__card card">
+                    <picture>
+                        <source type="image/webp"
+                            srcset="/img/catalog/klubnika/klubnika@1x.webp 1x, /img/catalog/klubnika/klubnika@2x.webp 2x">
+                        <img class="card__foto" src="/img/catalog/klubnika/klubnika@1x.jpg" width="264" height="180"
+                            alt="Изображение замороженной клубники.">
+                    </picture>
+                    <h3 class="card__title">Клубника</h3>
+                    <div class="card__wrapper">
+                        <span class="card__price">450 ₽</span>
+                        <span class="card__weight">за 1 кг</span>
+                    </div>
+                    <button class="card__button button " type="button">Заказать</button>
                 </div>
-                <button class="card__button button " type="button">Заказать</button>
-            </div>
 
-            <div class="catalog__card card">
-                <img class="card__foto" src="#" alt="Изображение вишни">
-                <h3 class="card__title">Вишня</h3>
-                <div class="card__wrapper">
-                    <span class="card__price">375 ₽</span>
-                    <span class="card__weight">за 1 кг</span>
+                <div class="catalog__card card">
+                    <picture>
+                        <source type="image/webp"
+                            srcset="/img/catalog/vishna/vishna@1x.webp 1x, /img/catalog/vishna/vishna@2x.webp 2x">
+                        <img class="card__foto" src="/img/catalog/vishna/vishna@1x.jpg" width="264" height="180"
+                            alt="Изображение замороженной вишни.">
+                    </picture>
+                    <h3 class="card__title">Вишня</h3>
+                    <div class="card__wrapper">
+                        <span class="card__price">375 ₽</span>
+                        <span class="card__weight">за 1 кг</span>
+                    </div>
+                    <button class="card__button button" type="button">Заказать</button>
                 </div>
-                <button class="card__button button" type="button">Заказать</button>
-            </div>
 
-            <div class="catalog__card card">
-                <img class="card__foto" src="#" alt="Изображение крыжовника">
-                <h3 class="card__title">Крыжовник</h3>
-                <div class="card__wrapper">
-                    <span class="card__price">300 ₽</span>
-                    <span class="card__weight">за 1 кг</span>
+                <div class="catalog__card card">
+                    <picture>
+                        <source type="image/webp"
+                            srcset="/img/catalog/krizovnik/krizovnik@1x.webp 1x, /img/catalog/krizovnik/krizovnik@2x.webp 2x">
+                        <img class="card__foto" src="/img/catalog/krizovnik/krizovnik@1x.jpg" width="264" height="180"
+                            alt="Изображение замороженной крыжовника.">
+                    </picture>
+                    <h3 class="card__title">Крыжовник</h3>
+                    <div class="card__wrapper">
+                        <span class="card__price">300 ₽</span>
+                        <span class="card__weight">за 1 кг</span>
+                    </div>
+                    <button class="card__button button" type="button">Заказать</button>
                 </div>
-                <button class="card__button button" type="button">Заказать</button>
+
+                <div class="catalog__card card">
+                    <picture>
+                        <source type="image/webp"
+                            srcset="/img/catalog/golubika/golubika@1x.webp 1x, /img/catalog/golubika/golubika@2x.webp 2x">
+                        <img class="card__foto" src="/img/catalog/golubika/golubika@1x.jpg" width="264" height="180"
+                            alt="Изображение замороженной голубики.">
+                    </picture>
+                    <h3 class="card__title">Голубика</h3>
+                    <div class="card__wrapper">
+                        <span class="card__price">510 ₽</span>
+                        <span class="card__weight">за 1 кг</span>
+                    </div>
+                    <button class="card__button button" type="button">Заказать</button>
+                </div>
+
+                <div class="catalog__card card">
+                    <picture>
+                        <source type="image/webp"
+                            srcset="/img/catalog/klukva/klukva@1x.webp 1x, /img/catalog/klukva/klukva@2x.webp 2x">
+                        <img class="card__foto" src="/img/catalog/klukva/klukva@1x.jpg" width="264" height="180"
+                            alt="Изображение замороженной клюквы.">
+                    </picture>
+                    <h3 class="card__title">Клюква</h3>
+                    <div class="card__wrapper">
+                        <span class="card__price">320 ₽</span>
+                        <span class="card__weight">за 1 кг</span>
+                    </div>
+                    <button class="card__button button" type="button">Заказать</button>
+                </div>
             </div>
         </section>
         <div class="main__whats-new whats-new">
             <h2 class="whats-new__title" id="news">Что новенького?</h2>
+            <div class="whats-new__container">
+                <div class="whats-new__news news">
+                    <h3 class="news__title">Новый урожай клубники</h3>
+                    <p class="news__text">К нам поступила свежая сочная ароматная клубника из Алтайского края. Крупные
+                        отборные ягоды можно приобрести свежими от 200 гр, или замороженными от 1 кг. Поторопитесь,
+                        сезон
+                        клубники короткий и свежие ягоды скоро закончатся.</p>
+                    <span class="news__date">22 июня 2022</span>
+                </div>
 
-            <div class="whats-new news">
-                <h3 class="news__title">Новый урожай клубники</h3>
-                <p class="news__text">К нам поступила свежая сочная ароматная клубника из Алтайского края. Крупные
-                    отборные ягоды можно приобрести свежими от 200 гр, или замороженными от 1 кг. Поторопитесь, сезон
-                    клубники короткий и свежие ягоды скоро закончатся.</p>
-                <span class="news__date">22 июня 2022</span>
-            </div>
+                <div class="whats-new__news news">
+                    <h3 class="news__title">В июне дарим скидку 15% на все свежие ягоды</h3>
+                    <p class="news__text">Свежие ягоды урожая этого года со скидкой 15%. Клубнику, малину, голубику,
+                        вишню
+                        доставим от 200 гр.</p>
+                    <span class="news__date">15 июня 2022</span>
+                </div>
 
-            <div class="whats-new news">
-                <h3 class="news__title">В июне дарим скидку 15% на все свежие ягоды</h3>
-                <p class="news__text">Свежие ягоды урожая этого года со скидкой 15%. Клубнику, малину, голубику, вишню
-                    доставим от 200 гр.</p>
-                <span class="news__date">15 июня 2022</span>
-            </div>
-
-            <div class="whats-new news">
-                <h3 class="news__title">Микс из ягод</h3>
-                <p class="news__text">Мы приготовим для вас смеси из различных замороженных ягод по вашему пожеланию.
-                    Ягодные смеси удобно использовать для приготовления напитков. Все ягоды замораживаются методом
-                    шоковой заморозки, что позволяет сохранить их естественный вкус и аромат.</p>
-                <span class="news__date">02 июня 2022</span>
+                <div class="whats-new__news news">
+                    <h3 class="news__title">Микс из ягод</h3>
+                    <p class="news__text">Мы приготовим для вас смеси из различных замороженных ягод по вашему
+                        пожеланию.
+                        Ягодные смеси удобно использовать для приготовления напитков. Все ягоды замораживаются методом
+                        шоковой заморозки, что позволяет сохранить их естественный вкус и аромат.</p>
+                    <span class="news__date">02 июня 2022</span>
+                </div>
             </div>
         </div>
 
@@ -133,10 +202,12 @@
         <div class="location">
             <div class="location__invite invite" id="contacts">
                 <h2 class="invite__title">Где забрать ягоды?</h2>
-                <h4 class="invite__text">Забери ягоды с нашего склада по адресу:</h4>
-                <p class="invite__adress">Набережная Обводного канала, 101</p>
-                <p class="invite__phone">+ 7 910 524 41 18</p>
-                <p class="invite__mail">info@yagoda.ru</p>
+                <div class="invite__container">
+                    <h4 class="invite__text">Забери ягоды с нашего склада по адресу:</h4>
+                    <p class="invite__adress">Набережная Обводного канала, 101</p>
+                    <p class="invite__phone">+ 7 910 524 41 18</p>
+                    <p class="invite__mail">info@yagoda.ru</p>
+                </div>
             </div>
             <iframe class="invite__map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52374.281340783986!2d-111.82792624587917!3d34.87148688958284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1662244484725!5m2!1sru!2sru"
@@ -146,7 +217,7 @@
         <section class="footer__social social">
             <div class="social__container">
                 <a class="social__link-logo" href="">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" fill="none" viewBox="0 0 52 52">
+                    <svg class="social_logo" xmlns="http://www.w3.org/2000/svg" width="52" height="52" fill="none" viewBox="0 0 52 52">
                         <path fill="#B22EC8"
                             d="M14.408 18.444s-1.863 1.12-2.278 2.959c-.416 1.84 0 3.853 0 3.853s-2.922 1.206-2.922 4.997c0 3.79 2.464 4.862 2.464 4.862s.03 4.475 2.787 6.887c2.759 2.413 5.653 2.425 5.653 2.425s1.505 3.184 5.933 3.184 5.933-3.184 5.933-3.184 2.998-.438 5.653-2.425c2.654-1.986 2.581-6.887 2.581-6.887s2.67-1.07 2.67-4.862-2.922-4.996-2.922-4.996.416-2.015 0-3.854c-.417-1.84-2.279-2.959-2.279-2.959" />
                         <path fill="#B22EC8"
@@ -173,6 +244,7 @@
                             stroke-width="2"
                             d="M16.908 30.819c0 1.708-1.2 3.152-2.847 3.62m4.003-13.177c0 2.235-1.793 4.048-4.004 4.048m19.431-4.048c0 2.235 1.793 4.048 4.004 4.048M35.57 30.82c0 1.632 1.095 3.022 2.629 3.553" />
                     </svg>
+                    <p class="title-berry">Ягода</p>
                 </a>
 
                 <ul class="social__list">

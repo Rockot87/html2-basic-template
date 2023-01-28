@@ -46,7 +46,7 @@
 
 .form__input:checked + .form__control-mark::before{
     position: absolute;
-    content: url("/img/checkbox-arrow.svg");
+    content: url("./img/icons/checkbox-arrow.svg");
     bottom: 1px;
     left: 4px;
 }

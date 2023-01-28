@@ -1,8 +1,8 @@
 .card {
-    margin-bottom: 24px;
     background: #FBFCFE;
     border-radius: 40px;
     box-shadow: 0px 4px 4px rgba(88, 13, 101, 0.15);
+    width: 268px;
 }
 
 .card:last-child {
@@ -39,4 +39,12 @@
 
 .card__button{
     margin-bottom: 54px;
+    @include tablet{
+        
+    }
+}
+
+.card__foto{
+    margin-bottom: 28px;
+    border-radius: 40px 40px 0 0;
 }

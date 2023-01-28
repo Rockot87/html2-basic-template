@@ -1,3 +1,10 @@
+.invite {
+    @include tablet {
+        padding-top: 114px;
+        padding-bottom: 40px;
+    }
+}
+
 .invite__title {
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-weight: 400;
@@ -5,22 +12,55 @@
     line-height: 40px;
     text-align: center;
     color: #0F805D;
+    margin: 0;
+
+    @include tablet {
+        font-size: 48px;
+        line-height: 54px;
+        padding-left: 50px;
+        margin-bottom: 72px;
+    }
 }
 
 .invite__text {
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     text-align: center;
+    margin: 0;
     @include font-invite;
-    margin-bottom: 34px
+    margin-bottom: 34px;
 
+    @include tablet {
+        text-align: inherit;
+        margin-bottom: 20px;
+    }
 }
 
-.invite__phone{
+.invite__adress{
+    margin: 0;
+
+    @include tablet{
+        margin-bottom: 18px;
+    }
+}
+
+.invite__phone {
+    margin: 0;
+    @include font-invite;
+    margin-bottom: 12px;
+
+    @include tablet{
+        margin-bottom: 18px;
+    }
+}
+
+.invite__mail {
+    margin: 0;
     @include font-invite;
     margin-bottom: 12px;
 }
 
-.invite__mail{
-    @include font-invite; 
-    margin-bottom: 12px;
+.invite__container{
+    @include tablet{
+        padding-left: 180px;
+    }
 }

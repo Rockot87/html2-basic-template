@@ -1,0 +1,10 @@
+.title-berry{
+    text-decoration: none;
+    @include tablet{
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        color: #0F805D;
+        margin: 0;
+    }
+}

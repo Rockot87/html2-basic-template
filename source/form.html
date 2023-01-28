@@ -10,17 +10,19 @@
 
 <body class="page__body">
 
-    <header class="header">
-        <nav class="header-nav">
-            <a class="header-nav__logo" href="">
-                <img class="header-nav__pic" src="" alt="">
+    <header class="page__header header">
+        <nav class="header__nav nav nav--closed nav--nojs">
+            <a class="nav__logo" href="#">
+                <img class="nav__pic" src="../img/logo.svg" alt="Логотип">
+                <p class="nav__title title-berry">Ягода</p>
             </a>
-            <ul class="header-nav__list">
-                <li class="nav__item"><a class="nav__link" href="./index.html">Каталог</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Новости</a></li>
+
+            <button class="nav__toggle  toggle nav__toggle--active" type="button" aria-label="открыть меню"></button>
+            <ul class="nav__list nav__item--active">
+                <li class="nav__item"><a class="nav__link" href="#">Каталог</a></li>
+                <li class="nav__item"><a class="nav__link" href="#news">Новости</a></li>
                 <li class="nav__item"><a class="nav__link" href="#contacts">Контакты</a></li>
                 <li class="nav__item"><a class="nav__link" href="./form.html">Заказать</a></li>
-
 
             </ul>
         </nav>

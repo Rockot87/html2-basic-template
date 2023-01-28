@@ -1,9 +1,30 @@
 .catalog {
     padding: 64px 26px;
+
+    @include tablet{
+        padding: 64px 100px;
+  
+    }
+}
+
+.catalog__container{
+    @include tablet{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto auto;
+        row-gap: 52px;
+    }
 }
 
 .catalog__title {
     font-family: "Comfortaa", Arial, Helvetica, sans-serif;
     @include title;
     margin: 0;
+
+    @include tablet {
+        font-size: 48px;
+        line-height: 54px;
+        margin-bottom: 72px;
+
+    }
 }

@@ -2,5 +2,8 @@
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   color: #000000;
   // padding: 10px 15px;
-
+  // display: flex;
+  @include tablet{
+    padding: 22px 26px;
+  }
 }

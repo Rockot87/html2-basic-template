@@ -5,19 +5,39 @@
     width: 320px;
     height: 640px;
     background-color: aqua;
+
+    @include tablet {
+        background-image: image-set(url("/img/background-image/vanesa-tablet@1x.jpg")1x, url("/img/background-image/vanesa-tablet@2x.jpg") 2x);
+        // background-image: url("/img/background-image/vanesa-tablet@1x.jpg");
+        background-repeat: no-repeat;
+        width: 768px;
+        height: 924px;
+    }
 }
 
 .container__wrapper {
     padding: 68px 27px 192px 28px;
+
+    @include tablet {
+        padding: 142px 22px 420px 214px;
+    }
 }
 
 .container__title {
     @include title;
     margin: 0;
     margin-bottom: 32px;
+    text-align: center;
+
+    @include tablet {
+        font-size: 48px;
+        line-height: 54px;
+        margin-bottom: 48px;
+
+    }
 }
 
-.container__list{
+.container__list {
     padding: 0;
 }
 
@@ -29,8 +49,25 @@
     margin-bottom: 18px;
     padding-left: 72px;
     padding-right: 28px;
+
+    @include tablet {
+        margin-bottom: 23px;
+        font-size: 18px;
+        line-height: 22px;
+    }
 }
 
-.container__item:last-child{
- margin-bottom: 48px;
+.container__item:last-child {
+    margin-bottom: 48px;
+}
+
+
+.container__list+.container__button {
+    padding: 16px 82px;
+
+    @include tablet {
+        padding: 16px 104px 18px 104px;
+        font-size: 28px;
+        line-height: 33px;
+    }
 }
