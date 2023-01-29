@@ -29,103 +29,119 @@
     </header>
 
     <main class="main-form">
-        <div class="main-form__order order">
-            <h1 class="order__title">Закажи ягоды</h1>
-            <p class="order__text">Мы соберем для вас ягоды и доставим их в удобном для вас виде - свежими или
-                замороженными</p>
-        </div>
+        <picture>
+            <source media="(min-width: 1440px)" type="image/webp"
+                srcset="/img/background-image/background-form-desktop@1x.webp 1x, /img/background-image/background-form-desktop@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="/img/background-image/background-form-desktop@1x.jpg">
+            <source media="(min-width: 1440px)" srcset="/img/background-image/background-form-desktop@2x.jpg">
+            <source media="(min-width: 768px)" type="image/webp"
+                srcset="/img/background-image/background-form-tablet@1x.webp 1x, /img/background-image/background-form-tablet@2x.webp 2x">
+            <source media="(min-width: 768px)" srcset="/img/background-image/background-form-tablet@1x.jpg">
+            <source media="(min-width: 768px)" srcset="/img/background-image/background-form-tablet@2x.jpg">
+            <source type="image/webp"
+                srcset="/img/background-image/background-form-mobile@1x.webp 1x, /img/background-image/background-form-mobile@2x.webp 2x">
+            <img class="order__foto" src="/img/background-image/background-form-mobile@2x.jpg" width="320"
+                height="120" alt="Фотография ягод.">
+        </picture>
+        <div class="main-form__container">
+            <div class="main-form__order order">
+                
+                <h1 class="order__title">Закажи ягоды</h1>
+                <p class="order__text">Мы соберем для вас ягоды и доставим их в удобном для вас виде - свежими или
+                    замороженными</p>
+            </div>
 
-        <form class="main-form__form form" action="https://echo.htmlacademy.ru/" method="post">
-            <fieldset class="form__fieldset form__fieldset--kind">
-                <legend class="form__title">Выберите ягоды</legend>
-
-
-                <label class="form__label">
-                    <input class="form__input visually-hidden" type="checkbox" name="sweetener">
-                    <span class="form__control-mark form__checkbox-button"></span>
-                    <span class="form__control-label">брусника</span>
-                </label>
-
-                <label class="form__label">
-                    <input class="form__input visually-hidden" type="checkbox" name="water">
-                    <span class="form__control-mark form__checkbox-button"></span>
-                    <span class="form__control-label">вишня</span>
-                </label>
-
-                <label class="form__label">
-                    <input class="form__input visually-hidden" type="checkbox" name="milk">
-                    <span class="form__control-mark form__checkbox-button"></span>
-                    <span class="form__control-label">голубика</span>
-                </label>
-
-                <label class="form__label">
-                    <input class="form__input visually-hidden" type="checkbox" name="vitamins">
-                    <span class="form__control-mark form__checkbox-button"></span>
-                    <span class="form__control-label">ежевика</span>
-                </label>
-
-                <label class="form__label">
-                    <input class="form__input visually-hidden" type="checkbox" name="sweetener">
-                    <span class="form__control-mark form__checkbox-button"></span>
-                    <span class="form__control-label">клубника</span>
-                </label>
-
-                <label class="form__label">
-                    <input class="form__input visually-hidden" type="checkbox" name="water">
-                    <span class="form__control-mark form__checkbox-button"></span>
-                    <span class="form__control-label">клюква</span>
-                </label>
-
-                <label class="form__label">
-                    <input class="form__input visually-hidden" type="checkbox" name="milk">
-                    <span class="form__control-mark form__checkbox-button"></span>
-                    <span class="form__control-label">крыжовник</span>
-                </label>
-
-                <label class="form__label">
-                    <input class="form__input visually-hidden" type="checkbox" name="vitamins">
-                    <span class="form__control-mark form__checkbox-button"></span>
-                    <span class="form__control-label">малина</span>
-                </label>
-
-                <label class="form__label">
-                    <input class="form__input visually-hidden" type="checkbox" name="milk">
-                    <span class="form__control-mark form__control-mark--no form__checkbox-button"></span>
-                    <span class="form__control-label">морожка</span>
-                </label>
-
-                <label class="form__label">
-                    <input class="form__input visually-hidden" type="checkbox" name="vitamins">
-                    <span class="form__control-mark form__control-mark--no form__checkbox-button"></span>
-                    <span class="form__control-label">черника</span>
-                </label>
-            </fieldset>
-
-            <fieldset class="form__fieldset form__fieldset--storage">
-                <legend class="form__title">Вид хранения</legend>
+            <form class="main-form__form form" action="https://echo.htmlacademy.ru/" method="post">
+                <fieldset class="form__fieldset form__fieldset--kind">
+                    <legend class="form__title">Выберите ягоды</legend>
 
 
-                <label class="form__label">
-                    <input class="form__input visually-hidden" type="checkbox" name="sweetener">
-                    <span class="form__control-mark form__checkbox-button"></span>
-                    <span class="form__control-label">свежие ягоды</span>
-                </label>
+                    <label class="form__label">
+                        <input class="form__input visually-hidden" type="checkbox" name="sweetener">
+                        <span class="form__control-mark form__checkbox-button"></span>
+                        <span class="form__control-label">брусника</span>
+                    </label>
 
-                <label class="form__label">
-                    <input class="form__input visually-hidden" type="checkbox" name="water">
-                    <span class="form__control-mark form__checkbox-button"></span>
-                    <span class="form__control-label">замороженые ягоды</span>
-                </label>
+                    <label class="form__label">
+                        <input class="form__input visually-hidden" type="checkbox" name="water">
+                        <span class="form__control-mark form__checkbox-button"></span>
+                        <span class="form__control-label">вишня</span>
+                    </label>
 
-                <label class="form__label">
-                    <input class="form__input visually-hidden" type="checkbox" name="milk">
-                    <span class="form__control-mark form__checkbox-button"></span>
-                    <span class="form__control-label">ягодные миксы</span>
-                </label>
-            </fieldset>
+                    <label class="form__label">
+                        <input class="form__input visually-hidden" type="checkbox" name="milk">
+                        <span class="form__control-mark form__checkbox-button"></span>
+                        <span class="form__control-label">голубика</span>
+                    </label>
 
-            <fieldset class="form__radio-button radio-button">
-                <legend class="radio-button__legend">Способ доставки </legend>
+                    <label class="form__label">
+                        <input class="form__input visually-hidden" type="checkbox" name="vitamins">
+                        <span class="form__control-mark form__checkbox-button"></span>
+                        <span class="form__control-label">ежевика</span>
+                    </label>
+
+                    <label class="form__label">
+                        <input class="form__input visually-hidden" type="checkbox" name="sweetener">
+                        <span class="form__control-mark form__checkbox-button"></span>
+                        <span class="form__control-label">клубника</span>
+                    </label>
+
+                    <label class="form__label">
+                        <input class="form__input visually-hidden" type="checkbox" name="water">
+                        <span class="form__control-mark form__checkbox-button"></span>
+                        <span class="form__control-label">клюква</span>
+                    </label>
+
+                    <label class="form__label">
+                        <input class="form__input visually-hidden" type="checkbox" name="milk">
+                        <span class="form__control-mark form__checkbox-button"></span>
+                        <span class="form__control-label">крыжовник</span>
+                    </label>
+
+                    <label class="form__label">
+                        <input class="form__input visually-hidden" type="checkbox" name="vitamins">
+                        <span class="form__control-mark form__checkbox-button"></span>
+                        <span class="form__control-label">малина</span>
+                    </label>
+
+                    <label class="form__label">
+                        <input class="form__input visually-hidden" type="checkbox" name="milk">
+                        <span class="form__control-mark form__control-mark--no form__checkbox-button"></span>
+                        <span class="form__control-label">морожка</span>
+                    </label>
+
+                    <label class="form__label">
+                        <input class="form__input visually-hidden" type="checkbox" name="vitamins">
+                        <span class="form__control-mark form__control-mark--no form__checkbox-button"></span>
+                        <span class="form__control-label">черника</span>
+                    </label>
+                </fieldset>
+
+                <fieldset class="form__fieldset form__fieldset--storage">
+                    <legend class="form__title">Вид хранения</legend>
+
+
+                    <label class="form__label">
+                        <input class="form__input visually-hidden" type="checkbox" name="sweetener">
+                        <span class="form__control-mark form__checkbox-button"></span>
+                        <span class="form__control-label">свежие ягоды</span>
+                    </label>
+
+                    <label class="form__label">
+                        <input class="form__input visually-hidden" type="checkbox" name="water">
+                        <span class="form__control-mark form__checkbox-button"></span>
+                        <span class="form__control-label">замороженые ягоды</span>
+                    </label>
+
+                    <label class="form__label">
+                        <input class="form__input visually-hidden" type="checkbox" name="milk">
+                        <span class="form__control-mark form__checkbox-button"></span>
+                        <span class="form__control-label">ягодные миксы</span>
+                    </label>
+                </fieldset>
+
+                <fieldset class="form__radio-button radio-button">
+                    <legend class="radio-button__legend">Способ доставки </legend>
                     <label class="radio-button__label">
                         <input class="radio-button__radio visually-hidden" type="radio" name="goal" value="slim"
                             checked>Доставка (по СПБ в пределах КАД)
@@ -133,40 +149,45 @@
                     </label>
                     <label class="radio-button__label">
                         <input class="radio-button__radio visually-hidden" type="radio" name="goal"
-                            value="fat">Самовывоз (Набережная Обводного канала, 101)
+                            value="fat">Самовывоз
+                        (Набережная Обводного канала, 101)
                         <span class="radio-button__control-mark"></span>
                     </label>
-               
-            </fieldset>
 
-            <div class="form__contacts contacts" id="contacts">
-                <h2 class="contacts__title">Ваши контакты</h2>
-                <label class="contacts__label contacts__label--name" for="user-name">Имя*
-                    <input class="form__input form__input--states contacts__input contacts__input--name"
-                        placeholder="Как к вам обращаться?" type="text" name="user-name" id="user-name" required>
-                </label>
-                <label class="contacts__label contacts__label--phone" for="user-phone">Телефон*
-                    <input class="form__input form__input--states contacts__input contacts__input--phone"
-                        placeholder="+7 ххх ххх хх хх" type="tel" name="user-phone" id="user-phone" required>
-                </label>
-                <label class="contacts__label contacts__label--e-mail" for="user-name">E-mail*
-                    <input class="form__input form__input--states contacts__input contacts__input--e-mail"
-                        placeholder="Ваш email" type="email" name="user-name" id="user-name" required>
-                </label>
-                <label class="contacts__label contacts__label--address" for="user-address">Адрес*
-                    <input class="form__input form__input--states contacts__input contacts__input--address"
-                        placeholder="Адрес в Санкт-Петербурге" type="text" name="user-address" id="user-address"
-                        required>
-                </label>
-            </div>
-            <div class="form__comments comment">
-                <p class="comment__title">Пожелания к заказу</p>
-                <textarea class="comment__text" id="comment" name="textarea"
-                    placeholder="Чем мы можем вам помочь?"></textarea>
-            </div>
-            <button class="form__button button" type="button" aria-label="Заказать"><span
-                    class="button__text">Заказать</span></button>
-        </form>
+                </fieldset>
+
+                <div class="form__contacts contacts" id="contacts">
+                    <h2 class="contacts__title">Ваши контакты</h2>
+                    <div class="contacts__wrapper">
+                        <label class="contacts__label contacts__label--name" for="user-name">Имя*
+                            <input class="form__input form__input--states contacts__input contacts__input--name"
+                                placeholder="Как к вам обращаться?" type="text" name="user-name" id="user-name"
+                                required>
+                        </label>
+                        <label class="contacts__label contacts__label--phone" for="user-phone">Телефон*
+                            <input class="form__input form__input--states contacts__input contacts__input--phone"
+                                placeholder="+7 ххх ххх хх хх" type="tel" name="user-phone" id="user-phone" required>
+                        </label>
+                        <label class="contacts__label contacts__label--e-mail" for="user-name">E-mail*
+                            <input class="form__input form__input--states contacts__input contacts__input--e-mail"
+                                placeholder="Ваш email" type="email" name="user-name" id="user-name" required>
+                        </label>
+                        <label class="contacts__label contacts__label--address" for="user-address">Адрес*
+                            <input class="form__input form__input--states contacts__input contacts__input--address"
+                                placeholder="Адрес в Санкт-Петербурге" type="text" name="user-address" id="user-address"
+                                required>
+                        </label>
+                    </div>
+                </div>
+                <div class="form__comments comment">
+                    <p class="comment__title">Пожелания к заказу</p>
+                    <textarea class="comment__text" id="comment" name="textarea"
+                        placeholder="Чем мы можем вам помочь?"></textarea>
+                </div>
+                <button class="form__button button" type="button" aria-label="Заказать"><span
+                        class="button__text">Заказать</span></button>
+            </form>
+        </div>
     </main>
 
 
@@ -174,10 +195,12 @@
         <div class="location">
             <div class="location__invite invite" id="contacts">
                 <h2 class="invite__title">Где забрать ягоды?</h2>
-                <h4 class="invite__text">Забери ягоды с нашего склада по адресу:</h4>
-                <p class="invite__adress">Набережная Обводного канала, 101</p>
-                <p class="invite__phone">+ 7 910 524 41 18</p>
-                <p class="invite__mail">info@yagoda.ru</p>
+                <div class="invite__container">
+                    <h4 class="invite__text">Забери ягоды с нашего склада по адресу:</h4>
+                    <p class="invite__adress">Набережная Обводного канала, 101</p>
+                    <p class="invite__phone">+ 7 910 524 41 18</p>
+                    <p class="invite__mail">info@yagoda.ru</p>
+                </div>
             </div>
             <iframe class="invite__map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52374.281340783986!2d-111.82792624587917!3d34.87148688958284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1662244484725!5m2!1sru!2sru"
@@ -187,7 +210,8 @@
         <section class="footer__social social">
             <div class="social__container">
                 <a class="social__link-logo" href="">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" fill="none" viewBox="0 0 52 52">
+                    <svg class="social_logo" xmlns="http://www.w3.org/2000/svg" width="52" height="52" fill="none"
+                        viewBox="0 0 52 52">
                         <path fill="#B22EC8"
                             d="M14.408 18.444s-1.863 1.12-2.278 2.959c-.416 1.84 0 3.853 0 3.853s-2.922 1.206-2.922 4.997c0 3.79 2.464 4.862 2.464 4.862s.03 4.475 2.787 6.887c2.759 2.413 5.653 2.425 5.653 2.425s1.505 3.184 5.933 3.184 5.933-3.184 5.933-3.184 2.998-.438 5.653-2.425c2.654-1.986 2.581-6.887 2.581-6.887s2.67-1.07 2.67-4.862-2.922-4.996-2.922-4.996.416-2.015 0-3.854c-.417-1.84-2.279-2.959-2.279-2.959" />
                         <path fill="#B22EC8"
@@ -214,6 +238,7 @@
                             stroke-width="2"
                             d="M16.908 30.819c0 1.708-1.2 3.152-2.847 3.62m4.003-13.177c0 2.235-1.793 4.048-4.004 4.048m19.431-4.048c0 2.235 1.793 4.048 4.004 4.048M35.57 30.82c0 1.632 1.095 3.022 2.629 3.553" />
                     </svg>
+                    <p class="title-berry">Ягода</p>
                 </a>
 
                 <ul class="social__list">

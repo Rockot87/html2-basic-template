@@ -7,4 +7,7 @@
         color: #0F805D;
         margin: 0;
     }
+    @include desktop{
+        grid-column: 2/3;
+    }
 }

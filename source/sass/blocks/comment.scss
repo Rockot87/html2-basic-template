@@ -1,3 +1,10 @@
+.comment{
+    @include tablet{
+        padding-left: 46px;
+        padding-right: 46px;
+    }
+}
+
 .comment__title {
     font-weight: 400;
     font-size: 14px;
@@ -12,4 +19,8 @@
     height: 124px;
     padding: 16px 12px;
     margin-bottom: 32px;
+
+    @include tablet{
+        width: 100%;
+    }
 }

@@ -7,6 +7,10 @@
         justify-content: space-between;
         padding: 22px 26px 22px 20px;
     }
+
+    @include desktop{
+        padding: 24px 159px 24px 156px;
+    }
 }
 
 .social__container {
@@ -19,7 +23,10 @@
     display: flex;
     flex-wrap: wrap;
     padding-left: 55px;
-    // margin: 0;
+    margin: 0;
+    @include desktop{
+        padding-left: 345px;
+    }
 }
 
 .social__item {
@@ -34,8 +41,18 @@
     @include tablet{
         display: none;
     }
+    @include desktop{
+        display: inherit;
+    }
 }
 
 .social__link-logo{
     text-decoration: none;
+
+    @include desktop{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        column-gap: 8px;
+    }
 }

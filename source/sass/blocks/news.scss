@@ -41,7 +41,10 @@
 .news:nth-child(3n){
     @include tablet{
       margin: 0 auto;
-      margin-left: 179px;
-      
+      margin-left: 179px;  
     } 
+
+    @include desktop{
+        margin: 0;
+    }
 }

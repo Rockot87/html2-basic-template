@@ -22,3 +22,16 @@
         padding-right: 118px;
     }
 }
+
+.order__foto{
+    padding: 0;
+    @include tablet{
+        width: 100%;
+        height: 10%;
+    }
+
+    @include desktop{
+        width: 1440px;
+        height: 200px;
+    }
+}

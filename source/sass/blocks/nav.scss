@@ -3,6 +3,9 @@
     display: flex;
     flex-wrap: wrap;
   }
+  @include desktop{
+    padding: 24px 162px 24px 156px;
+  }
 }
 
 .nav__list {
@@ -16,6 +19,13 @@
     flex-wrap: wrap;
     padding-left: 87px;
     max-width: 500px;
+    margin-bottom: 0;
+  }
+
+  @include desktop{
+    margin-left: 345px;
+    max-width: 600px;
+
   }
 }
 
@@ -33,6 +43,10 @@
   @include tablet {
     padding-left: 16px;
 
+  }
+
+  @include desktop{
+    margin-right: 28px;
   }
 }
 
@@ -159,5 +173,8 @@
     grid-row: auto;
     grid-column: 1/2;
     display: none;
+  }
+  @include desktop{
+    display: inherit;
   }
 }

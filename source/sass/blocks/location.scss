@@ -1,3 +1,9 @@
 .location{
     padding: 86px 27px 64px;
+
+    @include desktop{
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 100px 156px;
+    }
 }

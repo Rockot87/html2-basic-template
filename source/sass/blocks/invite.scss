@@ -3,6 +3,12 @@
         padding-top: 114px;
         padding-bottom: 40px;
     }
+
+    @include desktop {
+        display: flex;
+        flex-direction: column;
+        padding-top: 24px;
+    }
 }
 
 .invite__title {
@@ -20,6 +26,12 @@
         padding-left: 50px;
         margin-bottom: 72px;
     }
+
+    @include desktop {
+        font-size: 52px;
+        line-height: 58px;
+        margin-bottom: 48px;
+    }
 }
 
 .invite__text {
@@ -33,13 +45,23 @@
         text-align: inherit;
         margin-bottom: 20px;
     }
+
+    @include desktop {
+        font-size: 20px;
+        line-height: 23px;
+    }
 }
 
-.invite__adress{
+.invite__adress {
     margin: 0;
 
-    @include tablet{
+    @include tablet {
         margin-bottom: 18px;
+    }
+
+    @include desktop {
+        font-size: 16px;
+        line-height: 20px;
     }
 }
 
@@ -48,8 +70,13 @@
     @include font-invite;
     margin-bottom: 12px;
 
-    @include tablet{
+    @include tablet {
         margin-bottom: 18px;
+    }
+
+    @include desktop {
+        font-size: 16px;
+        line-height: 20px;
     }
 }
 
@@ -57,10 +84,24 @@
     margin: 0;
     @include font-invite;
     margin-bottom: 12px;
+
+    @include desktop {
+        font-size: 16px;
+        line-height: 20px;
+    }
 }
 
-.invite__container{
-    @include tablet{
+.invite__container {
+    @include tablet {
         padding-left: 180px;
     }
+
+    @include desktop {
+        padding-left: 120px;
+    }
+}
+
+.invite__map {
+    border-radius: 40px;
+    height: 372px;
 }

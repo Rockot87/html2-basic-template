@@ -6,4 +6,7 @@
   @include tablet{
     padding: 22px 26px;
   }
+  @include desktop{
+    padding: 0;
+  }
 }
