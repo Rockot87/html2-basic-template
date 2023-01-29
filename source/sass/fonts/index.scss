@@ -1,5 +1,5 @@
 @font-face{
-  font-family: "Open Sans";
+  font-family: "Comfortaa";
   src: url("/fonts/comfortaaregular.ttf");
   font-style: normal;
   font-weight: 400;
@@ -7,9 +7,41 @@
 }
 
 @font-face{
-  font-family: "Open Sans";
+  font-family: "Comfortaa";
   src: url("../fonts/opensansbold.woff");
   font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face{
+  font-family: "Raleway";
+  src: url("/fonts/ralewayregular.ttf");
+  font-style: normal;
   font-weight: 400;
+  font-display: swap;
+}
+
+@font-face{
+  font-family: "Raleway";
+  src: url("/fonts/ralewaybold.ttf");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face{
+  font-family: "Amatic SC";
+  src: url("/fonts/amaticscregular.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face{
+  font-family: "Amatic SC";
+  src: url("/fonts/amaticscbold.ttf");
+  font-style: normal;
+  font-weight: 700;
   font-display: swap;
 }

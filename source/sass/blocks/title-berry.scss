@@ -1,6 +1,9 @@
 .title-berry{
+    font-family: "Amatic SC", Arial, Helvetica, sans-serif;
     text-decoration: none;
+    display: none;
     @include tablet{
+        display: block;
         font-weight: 700;
         font-size: 40px;
         line-height: 50px;

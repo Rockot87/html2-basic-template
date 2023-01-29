@@ -1,4 +1,12 @@
-.main-form__container{
+.main-form__container {
     padding-left: 26px;
     padding-right: 26px;
+
+    @include tablet {
+        // padding-left: 72px;
+        // padding-right: 72px;
+    }
+    @include desktop{
+        padding: 100px 300px 100px 348px;
+    }
 }

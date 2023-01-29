@@ -32,6 +32,7 @@
 
 
 .nav__item {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
   list-style: none;
   font-weight: 400;
   font-size: 20px;
@@ -176,5 +177,11 @@
   }
   @include desktop{
     display: inherit;
+  }
+}
+
+.nav__link--active{
+  @include desktop{
+    color: #0F805D;
   }
 }

@@ -12,13 +12,14 @@
 }
 
 .invite__title {
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-family: "Comfortaa", Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 36px;
     line-height: 40px;
     text-align: center;
     color: #0F805D;
     margin: 0;
+    margin-bottom: 64px;
 
     @include tablet {
         font-size: 48px;
@@ -35,9 +36,11 @@
 }
 
 .invite__text {
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
     text-align: center;
     margin: 0;
+    margin-bottom: 34px;
+
     @include font-invite;
     margin-bottom: 34px;
 
@@ -53,7 +56,10 @@
 }
 
 .invite__adress {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
     margin: 0;
+    margin-bottom: 18px;
+    padding-left: 36px;
 
     @include tablet {
         margin-bottom: 18px;
@@ -66,7 +72,10 @@
 }
 
 .invite__phone {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
     margin: 0;
+    margin-bottom: 18px;
+    padding-left: 36px;
     @include font-invite;
     margin-bottom: 12px;
 
@@ -81,7 +90,10 @@
 }
 
 .invite__mail {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
     margin: 0;
+    padding-left: 36px;
+    margin-bottom: 24px;
     @include font-invite;
     margin-bottom: 12px;
 
@@ -103,5 +115,10 @@
 
 .invite__map {
     border-radius: 40px;
-    height: 372px;
+
+    @include desktop {
+        height: 372px;
+        width: 552px;
+    }
+
 }

@@ -3,16 +3,24 @@
         padding-left: 46px;
         padding-right: 46px;
     }
+
+    @include desktop{
+       padding: 0; 
+       width: 624px;
+    }
 }
 
 .comment__title {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     margin: 0;
+    margin-left: 22px;
 }
 
 .comment__text {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
     border: 1px solid #0F805D;
     border-radius: 20px;
     width: 268px;
