@@ -12,14 +12,14 @@
     left: 50%;
     transform: translate(-50%, 0);
 
-    @include tablet{
-        // padding: 16px 104px;
-    }
+   
 }
 
-// .button--form {
-//     font-size: 17px;
-//     line-height: 16px;
-//     padding: 18px 35px;
-//     margin-bottom: 55px;
-// }
+.button:hover{
+    background: #B22EC8;
+}
+
+.button:active{
+    background: rgba(106, 16, 122, 0.6);
+    filter: drop-shadow(0px 4px 4px rgba(88, 13, 101, 0.25));
+}
