@@ -19,10 +19,13 @@
     @include tablet {
         font-size: 28px;
         line-height: 33px;
+        left: 79px;
+        top: -20px;
     }
 
     @include desktop{
-        
+        left: -38px;
+        top: -77px;
     }
 }
 

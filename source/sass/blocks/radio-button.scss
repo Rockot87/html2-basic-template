@@ -5,15 +5,20 @@
     flex-wrap: wrap;
     flex-direction: column;
     row-gap: 32px;
+    margin: 0;
 
     @include tablet {
-        padding: 48px 167px 45px 118px;
-    }
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        padding: 48px 78px 45px 85px;
 
     @include desktop {
         padding: 0;
     }
 }
+
+
 
 .radio-button__control-mark {
     position: absolute;
@@ -23,6 +28,14 @@
     height: 21px;
     border: 2px solid #0F805D;
     border-radius: 50%;
+
+    @include tablet{
+        top: 19px;
+    }
+
+    @include desktop{
+        top: 5px;
+    }
 }
 
 .radio-button__label {
@@ -34,6 +47,18 @@
     position: relative;
     padding-left: 36px;
     padding-right: 90px;
+
+    @include tablet{
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+}
+
+.radio-button__label:nth-child(2){
+    @include tablet{
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
 }
 
 .radio-button__legend {
@@ -47,6 +72,11 @@
     @include tablet {
         font-size: 28px;
         line-height: 33px;
+        margin-bottom: 0;
+    }
+
+    @include desktop{
+        margin-bottom: 48px;
     }
 
 }
@@ -60,4 +90,6 @@
     background-color: #0F805D;
     border-radius: 50%;
     content: "";
+}
+
 }

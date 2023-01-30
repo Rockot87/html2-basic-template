@@ -1,6 +1,10 @@
 .location{
     padding: 86px 27px 64px;
 
+    @include tablet{
+        padding: 2px 27px 64px;
+    }
+
     @include desktop{
         display: flex;
         flex-direction: row-reverse;

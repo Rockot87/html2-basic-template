@@ -2,11 +2,20 @@
     padding: 64px 26px;
 
     @include tablet {
-        padding: 64px 100px;
-
+        
+        padding: 64px 100px 200px 100px ;
     }
-    @include desktop{
-        padding: 100px 156px;
+
+    @include desktop {
+        padding: 64px 100px 200px 100px ;
+    }
+}
+
+.catalog__card{
+    margin-bottom: 24px;
+
+    @include tablet{
+        margin: 0;
     }
 }
 
@@ -18,7 +27,7 @@
         row-gap: 52px;
     }
 
-    @include desktop{
+    @include desktop {
         grid-template-rows: auto;
         grid-template-columns: auto auto auto auto;
     }
@@ -28,6 +37,7 @@
     font-family: "Comfortaa", Arial, Helvetica, sans-serif;
     @include title;
     margin: 0;
+    margin-bottom: 64px;
 
     @include tablet {
         font-size: 48px;

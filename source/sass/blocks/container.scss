@@ -30,7 +30,7 @@
         padding: 142px 22px 420px 214px;
     }
 
-    @include desktop{
+    @include desktop {
         padding: 142px 22px 313px 214px;
     }
 }
@@ -72,6 +72,7 @@
     margin-bottom: 18px;
     padding-left: 72px;
     padding-right: 28px;
+    position: relative;
 
     @include tablet {
         margin-bottom: 23px;
@@ -100,5 +101,48 @@
         padding: 16px 104px 18px 104px;
         font-size: 28px;
         line-height: 33px;
+    }
+}
+
+.container__item--berries::after {
+    position: absolute;
+    background-image: url(/img/icons/icon-leaf.svg);
+    background-repeat: no-repeat;
+    content: "";
+    width: 21px;
+    height: 20px;
+    left: 41px;
+    top: 0;
+}
+
+.container__item--frost::after {
+    position: absolute;
+    background-image: url(/img/icons/icon-ice.svg);
+    background-repeat: no-repeat;
+    content: "";
+    width: 32px;
+    height: 32px;
+    left: 36px;
+    top: 14px;
+
+    @include tablet{
+        top: 5px;
+        left: 32px;
+    }
+}
+
+.container__item--delivery::after {
+    position: absolute;
+    background-image: url(/img/icons/icon-outline-delivery-dining.svg);
+    background-repeat: no-repeat;
+    content: "";
+    width: 32px;
+    height: 32px;
+    left: 35px;
+    top: 4px;
+
+    @include tablet{
+        top: -4px;
+        left: 32px;
     }
 }
